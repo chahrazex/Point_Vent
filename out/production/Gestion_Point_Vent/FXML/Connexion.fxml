@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:controller="sample.Connexion" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="810.0" stylesheets="@../CSS/StyleConnxion.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="528.0" prefWidth="427.0" styleClass="Background">
+         <children>
+            <AnchorPane layoutX="435.0" layoutY="57.0" prefHeight="417.0" prefWidth="325.0" styleClass="Background1">
+               <children>
+                  <Pane layoutX="63.0" layoutY="83.0" prefHeight="49.0" prefWidth="325.0" styleClass="pane" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Pane layoutX="5.0" layoutY="368.0" prefHeight="49.0" prefWidth="325.0" styleClass="pane1" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="49.0">
+                     <children>
+                        <ImageView fitHeight="56.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Ressources/Admin.png" />
+                           </image>
+                        </ImageView>
+                        <Pane prefHeight="57.0" prefWidth="325.0">
+                           <children>
+                              <JFXTextField fx:id="usernameTextField" focusColor="WHITE" layoutX="34.0" layoutY="14.0" prefHeight="33.0" prefWidth="257.0" promptText="Username" styleClass="JFXTextFiled" unFocusColor="WHITE">
+                                 <padding>
+                                    <Insets left="25.0" />
+                                 </padding>
+                              </JFXTextField>
+                              <FontAwesomeIcon fill="#797777" iconName="USER" layoutX="41.0" layoutY="37.0" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="101.0" prefHeight="53.0" prefWidth="325.0">
+                           <children>
+                              <JFXTextField fx:id="passwordTextField" focusColor="WHITE" layoutX="34.0" layoutY="14.0" prefHeight="33.0" prefWidth="257.0" promptText="Password" styleClass="JFXTextFiled" unFocusColor="WHITE">
+                                 <padding>
+                                    <Insets left="25.0" />
+                                 </padding>
+                              </JFXTextField>
+                              <FontAwesomeIcon fill="#797777" iconName="LOCK" layoutX="41.0" layoutY="37.0" />
+                           </children>
+                        </Pane>
+                        <JFXButton onAction="#SignIn" prefHeight="32.0" prefWidth="89.0" styleClass="JFXButton" text="Sign in" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="170.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="256.0" fitWidth="217.0" layoutX="98.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ressources/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

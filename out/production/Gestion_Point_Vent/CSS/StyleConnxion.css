@@ -1,0 +1,29 @@
+.Background
+{
+    -fx-background-color: #E8E7E7;
+}
+.Background1
+{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 20 ;
+}
+.pane
+{
+    -fx-background-radius: 20 20 0 0;
+    -fx-background-color: linear-gradient(to top left, #574A98,#9263A6);
+}
+.pane1
+{
+    -fx-background-radius: 0 0 20 20;
+    -fx-background-color: linear-gradient(to top left, #574A98,#9263A6);
+}
+.JFXButton
+{
+    -fx-background-color: linear-gradient(to top left, #574A98,#9263A6);
+    -fx-background-radius: 5;
+}
+.JFXTextFiled
+{
+    -fx-background-color: #E8E7E7;
+    -fx-background-radius: 5;
+}
