@@ -2,30 +2,47 @@ package Model;
 
 public class Prduit
 {
-    int num,cost ;
-    String name ,type ;
+    int id,prix ;
+    String name ,qte ;
 
-    public Prduit(int num, String name, String type, int cost) {
-        this.num = num;
-
+    public Prduit(int id, String name,int prix,  String qte) {
+        this.id = id;
+        this.prix = prix;
         this.name = name;
-        this.type = type;
-        this.cost = cost;
+        this.qte = qte;
     }
 
-    public int getNum() {
-        return num;
+    public String getQte() {
+        return qte;
     }
 
-    public int getCost() {
-        return cost;
+    public void setQte(String qte) {
+        this.qte = qte;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getPrix() {
+        return prix;
+    }
+
+    public void setPrix(int prix) {
+        this.prix = prix;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getType() {
-        return type;
+    public void setName(String name) {
+        this.name = name;
     }
+
+
 }
